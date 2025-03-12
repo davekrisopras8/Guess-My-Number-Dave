@@ -117,3 +117,120 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+
+  .left, .right {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .left, .right {
+    width: 90%;
+    max-width: 40rem;
+  }
+
+  .message {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .label-score, .label-highscore {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .between {
+    font-size: 1.5rem;
+    top: 3rem;
+    right: 1.5rem;
+  }
+
+  .again {
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .guess {
+    font-size: 4rem;
+    padding: 2rem;
+    width: 20rem;
+  }
+
+  .btn.check {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .number {
+    font-size: 5rem;
+    width: 12rem;
+    padding: 2.5rem 0;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 35%;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    top: 45%;
+  }
+
+  .between {
+    font-size: 1.2rem;
+    top: 2rem;
+    right: 1rem;
+  }
+
+  .again {
+    top: 1rem;
+    left: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .guess {
+    margin-bottom: 2rem;
+  }
+
+  .right {
+    font-size: 1.8rem;
+  }
+
+  .message {
+    margin-bottom: 3rem;
+  }
+}

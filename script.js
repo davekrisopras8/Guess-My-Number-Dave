@@ -19,8 +19,8 @@ const displayMessage = function(message) {
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value)
   console.log(guess, typeof guess)
-  
-  // when there is no input 
+
+  // when there is no input
   if(!guess) {
     // document.querySelector('.message').textContent = '⛔ No Number!'
     displayMessage('⛔ No Number!')
@@ -38,7 +38,7 @@ document.querySelector('.check').addEventListener('click', function () {
       highscore = score
       document.querySelector('.highscore').textContent = highscore
     }
-    
+
     // when guess is wrong
   } else if(guess !== secretNumber) {
     if(score > 1) {
